@@ -7,9 +7,11 @@
   <title> {{ $title }} | Cari mesjid  </title>
   @yield('head')
   @vite('resources/css/app.css')
+
 </head>
 <body @yield('body')>
- 
+  @include('sweetalert::alert')
+
  
   @include('landing.component.navbar')
  
@@ -19,7 +21,6 @@
   </main>
  
  
-  @include('sweetalert::alert')
   @vite('resources/js/app.js')
  
   

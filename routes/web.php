@@ -43,3 +43,15 @@ Route::get('/listMasjid', function () {
         'title' => 'ambatuakm',
     ]);
 });
+
+Route::get('/profile', function() {
+    return view('profileMasjid.index', [
+        'title'=>'profile',
+    ]);
+});
+
+Route::get('/masjidForm', function() {
+    return view('form.namaMasjidForm', [
+        'title'=>'masjidForm',
+    ]);
+});

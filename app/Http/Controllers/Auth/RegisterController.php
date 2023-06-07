@@ -49,7 +49,7 @@
          # Jika EMAIL sudah ada yang punya maka kita harus mencegahnya agar tidak bisa register
          if(DB::table('users')->where('email', $request->email)->exists()){
             Alert::error('Error', 'Email sudah Terpakai');
-             return redirect('/register');
+             return redirect('/signin');
          }
   
          // store data to table user

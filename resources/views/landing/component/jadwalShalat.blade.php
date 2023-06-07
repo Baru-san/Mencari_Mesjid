@@ -36,7 +36,7 @@
                     Shubuh
                 </th>
                 <td class="px-6 py-4">
-                    Silver
+                    {{ $azan['subuh'] }}
                 </td>
                 <td class="px-6 py-4">
                     {{ $jadwal['subuh'] }}
@@ -48,7 +48,8 @@
                     Dzuhur
                 </th>
                 <td class="px-6 py-4">
-                    White
+                    {{ $azan['dzuhur'] }}
+
                 </td>
                 <td class="px-6 py-4">
                     {{ $jadwal['dzuhur'] }}
@@ -60,7 +61,8 @@
                     Ashar
                 </th>
                 <td class="px-6 py-4">
-                    Black
+                    {{ $azan['ashar'] }}
+
                 </td>
                 <td class="px-6 py-4">
                     {{ $jadwal['ashar'] }}
@@ -74,7 +76,8 @@
                     Maghrib
                 </th>
                 <td class="px-6 py-4">
-                    Black
+                    {{ $azan['maghrib'] }}
+
                 </td>
                 <td class="px-6 py-4">
                     {{ $jadwal['maghrib'] }}
@@ -88,7 +91,8 @@
                     Isya
                 </th>
                 <td class="px-6 py-4">
-                    Black
+                    {{ $azan['isya'] }}
+
                 </td>
                 <td class="px-6 py-4">
                     {{ $jadwal['isya'] }}

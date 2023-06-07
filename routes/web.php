@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use GuzzleHttp\Client;
+use Carbon\Carbon;
+
 
 
 /*
@@ -17,8 +20,19 @@ use App\Http\Controllers\Auth\RegisterController;
 */
 
 Route::get('/', function () {
-    return view('landing.index', [
-        'title' => ''
+    $currentDate = Carbon::now()->format('Y/m/d');
+    $client = new Client();
+    $url = 'https://api.myquran.com/v1/sholat/jadwal/0119/' . $currentDate;
+    $response = $client->get($url);
+    $data = json_decode($response->getBody()->getContents(), true);
+    $jadwal = $data['data']['jadwal'];
+    
+    
+    
+
+        return view('landing.index', [
+        'title' => '',
+        'jadwal' => $jadwal
     ]);
 });
 

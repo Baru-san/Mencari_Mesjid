@@ -7,6 +7,8 @@
 
 @section('content')
 
+<form action="/login" method="post">
+    @csrf
 <div class="bg-grey-lighter min-h-screen flex flex-col">
     <div class="container rounded-lg max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
         <div class="bg-white px-6 py-8 rounded-lg shadow-md text-black w-full">
@@ -22,12 +24,6 @@
             <input
                 type="text"
                 class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="fullname"
-                placeholder="Nama Lengkap" />
-
-            <input
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
                 name="email"
                 placeholder="Email" />
 
@@ -36,11 +32,6 @@
                 class="block border border-grey-light w-full p-3 rounded mb-4"
                 name="password"
                 placeholder="Password" />
-            <input
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="confirm_password"
-                placeholder="Konfirmasi Password" />
 
             <div class="content-center rounded-md fill-black max-w-sm flex flex-col justify-center px-3">
 
@@ -60,7 +51,7 @@
     </div>
 </div>
 <!-- End Hero Section -->
- 
+</form>
  
  
 @endsection

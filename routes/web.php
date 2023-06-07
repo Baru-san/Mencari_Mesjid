@@ -17,13 +17,23 @@ use App\Http\Controllers\Auth\RegisterController;
 */
 
 Route::get('/', function () {
-    return view('dashboard.index', [
+    return view('landing.index', [
         'title' => ''
     ]);
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'login']);
+Route::get('logout', [LoginController::class, 'destroy']);
+
+
 
 Route::get('/signin', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/signin', [RegisterController::class, 'store']);
 
+Route::get('dashboard', function(){
+    return view('dashboard.index', [
+        'title' => 'Dashboard',
+        'sourcemap' => mix('public/build/assets/app-0d91dc04.js'),
+    ]);
+});

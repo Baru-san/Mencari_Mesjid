@@ -6,10 +6,10 @@
     </div>
     <img 
     @auth
-    class="object-cover w-full rounded-t-lg h-96 xl:h-[102%] xl:w-[50%] md:w-[50%] lg:h-[102%] md:h-[102%] hidden md:block md:rounded-none md:rounded-l-lg md:mt-2  -mx-2" 
+    class="object-cover w-full rounded-t-lg xl:h-[102%] xl:w-[50%] md:w-[50%] lg:h-[102%] md:h-[102%] hidden md:block md:rounded-none md:rounded-l-lg md:mt-2  -mx-2" 
     src="{{ asset('images/Rectangle_61-1.png') }}"
     @else 
-    class="object-cover w-full rounded-t-lg h-96 xl:h-[102%] xl:w-[50%] md:w-[50%] lg:h-[102%] md:h-[102%] hidden md:block md:rounded-none md:rounded-l-lg md:mt-2  -mx-2" 
+    class="object-cover w-full rounded-t-lg xl:h-[102%] xl:w-[50%] md:w-[50%] lg:h-[102%] md:h-[102%] hidden md:block md:rounded-none md:rounded-l-lg md:mt-2  -mx-2" 
 
     src="images/Rectangle_61.png"   
     @endauth

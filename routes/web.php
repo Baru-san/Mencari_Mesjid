@@ -31,3 +31,15 @@ Route::get('/signin', [RegisterController::class, 'index'])->middleware('guest')
 Route::post('/signin', [RegisterController::class, 'store'])->middleware('guest');
 
 Route::get('dashboard', [DashboardController::class, 'index'])->middleware('auth');
+
+Route::get('/profile', function() {
+    return view('profileMasjid.index', [
+        'title'=>'profile',
+    ]);
+});
+
+Route::get('/masjidForm', function() {
+    return view('form.namaMasjidForm', [
+        'title'=>'masjidForm',
+    ]);
+});

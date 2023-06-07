@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\DashboardController;
+
+
 
 
 /*
@@ -16,24 +19,15 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing.index', [
-        'title' => ''
-    ]);
-});
+Route::get('/', [DashboardController::class, 'landing'])->middleware('guest');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'login']);
-Route::get('logout', [LoginController::class, 'destroy']);
+Route::get('logout', [LoginController::class, 'destroy'])->middleware('auth');
 
 
 
 Route::get('/signin', [RegisterController::class, 'index'])->middleware('guest');
-Route::post('/signin', [RegisterController::class, 'store']);
+Route::post('/signin', [RegisterController::class, 'store'])->middleware('guest');
 
-Route::get('dashboard', function(){
-    return view('dashboard.index', [
-        'title' => 'Dashboard',
-        'sourcemap' => mix('public/build/assets/app-0d91dc04.js'),
-    ]);
-});
+Route::get('dashboard', [DashboardController::class, 'index'])->middleware('auth');

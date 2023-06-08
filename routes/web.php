@@ -38,3 +38,27 @@ Route::get('/search', function(){
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/kajianForm', function() {
+    return view('form.kajianForm', [
+        'title'=>'kajianForm',
+    ]);
+});
+
+Route::get('/ziswahForm', function() {
+    return view('form.ziswahForm', [
+        'title'=>'ziswahForm',
+    ]);
+});
+
+Route::get('/salatForm', function() {
+    return view('form.salatForm', [
+        'title'=>'salatForm',
+    ]);
+});
+
+Route::get('/kegiatanForm', function() {
+    return view('form.kegiatanForm', [
+        'title'=>'kegiatanForm',
+    ]);
+});

@@ -14,13 +14,16 @@ return new class extends Migration
         Schema::create('data_masjids', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('alamat')->nullable();
             $table->binary('Mosque_image')->nullable();
             $table->string('PenanggungJawab');
             $table->longText('History')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

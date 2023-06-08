@@ -55,3 +55,15 @@ Route::get('/masjidForm', function() {
         'title'=>'masjidForm',
     ]);
 });
+
+Route::get('/kajianForm', function() {
+    return view('form.kajianForm', [
+        'title'=>'kajianForm',
+    ]);
+});
+
+Route::get('/ziswahForm', function() {
+    return view('form.ziswahForm', [
+        'title'=>'ziswahnForm',
+    ]);
+});

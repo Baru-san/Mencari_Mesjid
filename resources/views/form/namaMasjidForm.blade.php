@@ -6,6 +6,9 @@
 
 @section('content')
 
+<div class="flex flex-col items-center justify-center">
+    <h1 class="text-2xl font-bold mb-4 text-white">Selamat Datang</h1>
+</div>
 <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col place-items-start justify-start border border-gray-200 rounded-lg shadow md:flex-row md:w-[65%] md:h-[600px] dark:border-gray-700 dark:bg-gray-800"
         style="background-image: url('images/Rectangle_57.jpg'); background-repeat: no-repeat; background-size: cover;">
@@ -32,5 +35,7 @@
         </div>
     </div>
 </div> 
-
+<button class=" flex flex-col relative bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center">
+    Lanjut
+</button>
 @endsection

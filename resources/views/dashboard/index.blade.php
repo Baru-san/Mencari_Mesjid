@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  {{-- <title> {{ $title }} | Cari mesjid  </title> --}}
+  <title> {{ $title }} | Cari mesjid  </title>
   @vite('resources/css/app.css')
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <Link href="{{ asset('/css/style.css') }} " rel="stylesheet">
@@ -16,7 +16,7 @@
  
  
   @include('landing.component.navbar')
- 
+ {{-- @include('layouts.navigation') --}}
  
   <main class="min-h-screen">
     <div class="" style="display: flex; justify-content: center; align-items: center; height: 700px;">

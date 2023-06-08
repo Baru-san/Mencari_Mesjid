@@ -33,7 +33,7 @@ class DashboardController extends Controller
         $azan = $this->azanTime()['data'];
 
         return view('landing.index', [
-            'title' => '',
+            'title' => 'landing',
             'jadwal' => $jadwal,
             'azan' => $azan,
         ]);

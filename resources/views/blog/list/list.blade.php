@@ -36,7 +36,7 @@
                 <a href="#" class="hover:opacity-75 w-full">
                     <img src="{{ asset('images/Rectangle_1.png') }}" class="w-full max-h-96 object-cover" style="border-radius: 25px 25px 0 0;">
                 </a>
-                <a href="/sejarah">
+                <a href="/profilMasjid">
                 <div class="bg-white flex flex-col justify-start p-3" style="border-radius: 0 0 25px 25px">
                     {{-- <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a> --}}
                     <p  class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</p>

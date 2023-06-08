@@ -44,10 +44,13 @@
                             placeholder="Silahkan pilih tanggal" style="background-color: #EBF6F1;">
                     </div>
                 </div>
+                <div class="flex justify-end mt-40">
+                    <button
+                        class=" flex flex-col relative bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center ml-30">
+                        Lanjut
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <button class=" flex flex-col relative bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center">
-        Lanjut
-    </button>
 @endsection

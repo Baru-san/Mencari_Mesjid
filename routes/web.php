@@ -64,6 +64,18 @@ Route::get('/kajianForm', function() {
 
 Route::get('/ziswahForm', function() {
     return view('form.ziswahForm', [
-        'title'=>'ziswahnForm',
+        'title'=>'ziswahForm',
+    ]);
+});
+
+Route::get('/salatForm', function() {
+    return view('form.salatForm', [
+        'title'=>'salatForm',
+    ]);
+});
+
+Route::get('/kegiatanForm', function() {
+    return view('form.kegiatanForm', [
+        'title'=>'kegiatanForm',
     ]);
 });

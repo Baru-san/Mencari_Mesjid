@@ -31,7 +31,7 @@
         <!-- Posts Section -->
         <section class="w-full md:w-2/3 flex flex-col items-center px-3 mx-auto">
 
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow my-4 searchable-article" id="1">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75 w-full">
                     <img src="{{ asset('images/Rectangle_1.png') }}" class="w-full max-h-96 object-cover" style="border-radius: 25px 25px 0 0;">
@@ -49,7 +49,7 @@
                 </a>
             </article>
 
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow my-4 searchable-article" id="2">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75">
                     <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=2">
@@ -65,7 +65,7 @@
                 </div>
             </article>
 
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow my-4 searchable-article" id="3">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75">
                     <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=3">

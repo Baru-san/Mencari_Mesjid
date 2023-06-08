@@ -31,4 +31,10 @@ Route::middleware('auth')->group(function () {
 Route::get('/listMasjid', [MasjidController::class, 'listMasjid']);
 Route::get('/profilMasjid', [MasjidController::class, 'profil']);
 
+Route::get('/search', function(){
+    return view('blog.search',[
+        'title' => 'Search'
+    ]);
+});
+
 require __DIR__.'/auth.php';

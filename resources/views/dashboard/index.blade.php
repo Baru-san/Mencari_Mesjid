@@ -23,7 +23,7 @@
         @include('landing.component.card')
     </div>
     
-        <div class="slide-container swiper">
+        <div class="slide-container swiper bg-cyan-950 mt-5 mb-10">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide" >
@@ -36,7 +36,21 @@
                     </div>
                     <div class="card-content">
                         <h2 class="card-name">Masjid</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam itaque ratione ipsa eos rerum accusantium sapiente, ab et pariatur dolores soluta nisi, delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
+                        <a href="profilMasjid">
+                        <button class="card-button">View More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card swiper-slide" >
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                            <div class="card-image">
+                                <img src="{{ asset('images/Rectangle_87.png') }}" alt="" class="card-img">
+                            </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-name">Masjid</h2>
                         <button class="card-button">View More</button>
                     </div>
                 </div>
@@ -50,21 +64,6 @@
                     </div>
                     <div class="card-content">
                         <h2 class="card-name">Masjid</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam itaque ratione ipsa eos rerum accusantium sapiente, ab et pariatur dolores soluta nisi, delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
-                        <button class="card-button">View More</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide" >
-                    <div class="image-content">
-                        <span class="overlay"></span>
-    
-                            <div class="card-image">
-                                <img src="{{ asset('images/Rectangle_87.png') }}" alt="" class="card-img">
-                            </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-name">Masjid</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam itaque ratione ipsa eos rerum accusantium sapiente, ab et pariatur dolores soluta nisi, delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
                         <button class="card-button">View More</button>
                     </div>
                 </div><div class="card swiper-slide" >

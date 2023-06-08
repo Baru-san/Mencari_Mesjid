@@ -41,6 +41,16 @@
         <div class="px-4 py-3 text-sm text-gray-900">
           <div class="font-medium truncate">Selamat Datang</div>
           <div>{{ Auth::user()->name }}</div>
+          <div class="font-semibold truncate">
+            @can('jemaah')
+                Jemaah
+            @endcan
+            @can('pengurus')
+                Pengurus Masjid
+            @endcan
+            
+          </div>
+
         </div>
         <ul class="py-2 text-sm text-gray-700" aria-labelledby="avatarButton">
           <li>

@@ -2,16 +2,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 
     <!-- AlpineJS -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
    
 </head>
 <body class="bg-white font-family-karla">
-
-   
-
-
-
-
 
     <div class="container mx-auto flex flex-wrap py-6">
 
@@ -23,12 +17,33 @@
                 <a href="#" class="hover:opacity-75 w-full ">
                     <img src="{{ asset('images/Rectangle_1.png') }}" class="w-full max-h-96 object-cover" style="border-radius: 25px 25px 0 0">
                 </a>
-                <div class="bg-white flex flex-col justify-start rounded-lg p-3" style="border-radius: 0 0 25px 25px">
-                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a>
+                <div class="bg-white flex flex-col justify-start rounded-lg p-3" style="border-radius: 0 0 25px 25px; background-image: url('images/Rectangle_57.jpg'); background-repeat:repeat-y">
+                    
+
+                    
                     <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
                     <p href="#" class="text-sm pb-8">
                         By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on April 25th, 2020
                     </p>
+
+                    <div class=" flex gap-7 mx-auto bg-blue-700 rounded-lg mb-5">
+                        <div class="hover:bg-gray-300 p-3">             
+                        <a href="#" class="text-white hover:text-black text-sm font-bold uppercase rounded-lg h-fit ">Sejarah</a>
+                        </div>
+                        <div class="hover:bg-gray-300 p-3">
+                        <a href="#" class="text-white hover:text-black text-sm font-bold uppercase rounded-lg h-fit">Kajian</a>
+                        </div>
+                        <div class="hover:bg-gray-300 p-3">
+                        <a href="#" class="text-white hover:text-black text-sm font-bold uppercase rounded-lg h-fit">Kegiatan</a>
+                        </div>
+                        <div class="hover:bg-gray-300 p-3">
+                        <a href="#" class="text-white hover:text-black text-sm font-bold uppercase rounded-lg h-fit">Shalat</a>
+                        </div>
+                        <div class="hover:bg-gray-300 p-3">
+                        <a href="#" class="text-white hover:text-black text-sm font-bold uppercase rounded-lg h-fit">Ziswaf</a>
+                            </div>
+                    </div>
+
                     <h1 class="text-2xl font-bold pb-3">Introduction</h1>
                     <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque non libero suscipit suscipit eu eu urna. Proin bibendum urna mattis ante malesuada ultrices. Etiam in turpis vitae elit dictum aliquet. Donec mattis risus in turpis dapibus, eget tempus sem tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In est enim, imperdiet sed ornare quis, pellentesque vel risus. Nunc vitae vestibulum turpis. Quisque eget eleifend urna. Etiam et vulputate purus, ut egestas sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis quis neque non urna venenatis mollis et at massa. Pellentesque sem lacus, malesuada vel hendrerit molestie, mollis vel elit.</p>
                     <h1 class="text-2xl font-bold pb-3">Heading</h1>

@@ -7,7 +7,7 @@
 
 @section('content')
 
-<div class="" style="display: flex; justify-content: center; align-items: center; height: 700px;">
+<div class="flex justify-center pt-10">
     @include('landing.component.card')
 </div>
 

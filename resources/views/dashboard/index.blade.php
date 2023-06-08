@@ -19,7 +19,7 @@
  {{-- @include('layouts.navigation') --}}
  
   <main class="min-h-screen">
-    <div class="" style="display: flex; justify-content: center; align-items: center; height: 700px;">
+    <div class="flex justify-center pt-10 pb-10" style="">
         @include('landing.component.card')
     </div>
     
@@ -76,7 +76,7 @@
                     </div>
                     <div class="card-content">
                         <h2 class="card-name">Masjid</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam itaque ratione ipsa eos rerum accusantium sapiente, ab et pariatur dolores soluta nisi, delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
+                        <p class="card-description">Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
                         <button class="card-button">View More</button>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="card-content">
                         <h2 class="card-name">Masjid</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam itaque ratione ipsa eos rerum accusantium sapiente, ab et pariatur dolores soluta nisi, delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
+                        <p class="card-description"> delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
                         <button class="card-button">View More</button>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="card-content">
                         <h2 class="card-name">Masjid</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam itaque ratione ipsa eos rerum accusantium sapiente, ab et pariatur dolores soluta nisi, delectus repellendus natus blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
+                        <p class="card-description"> blanditiis! Dolores ducimus aliquid natus alias? Excepturi, reprehenderit corporis? Mollitia vel veniam quia culpa accusantium harum aperiam ipsam repellat, facere a at enim possimus.</p>
                         <button class="card-button">View More</button>
                     </div>
                 </div>
@@ -123,9 +123,9 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".slide-content", {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 30,
-          slidesPerGroup: 3,
+          slidesPerGroup: 2,
           loop: true,
           pagination: {
             el: ".swiper-pagination",

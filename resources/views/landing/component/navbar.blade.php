@@ -1,20 +1,20 @@
 <nav class="bg-cyan-900 border-gray-200">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="/" class="flex items-center">
-      <img src="{{ asset('images/logo_2.svg') }}" class="h-8 mr-3" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap text-white ">Cari Mesjid</span>
+  <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+    <a href="/" class="flex items-center xs:mt-2">
+      <img src="{{ asset('images/logo_2.svg') }}" class="md:h-8 xs:h-7 mr-3 xs:mr-1" alt="Flowbite Logo" />
+      <span class="self-center md:text-2xl xs:text-base font-semibold whitespace-nowrap text-white ">Cari Mesjid</span>
     </a>
 
-    <div class="hidden w-full md:block md:w-auto ml-auto pr-20" id="navbar-items">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 md:dark:bg-gray-900">
+    <div class=" w-full xs:w-auto ml-auto pr-20" id="navbar-items">
+      <ul class="font-medium flex flex-col p-4 xs:p-0 mt-4 border border-gray-100 rounded-lg  xs:flex-row xs:space-x-8 xs:mt-0 xs:border-0 md:dark:bg-gray-900">
 
         @auth
         <li>
-          <a href="/dashboard" class=" block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent mt-2">Dashboard</a>
+          <a href="/dashboard" class=" block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 xs:hover:bg-transparent xs:border-0 xs:hover:text-blue-700 xs:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent mt-2">Dashboard</a>
         </li>
         @endauth
         <li>
-          <a href="/listMasjid" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent mt-2">Masjid</a>
+          <a href="/listMasjid" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 xs:hover:bg-transparent xs:border-0 xs:hover:text-blue-700 xs:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent mt-2">Masjid</a>
         </li>
         {{-- <li>
           <a href="#" id="search-link" class="md:hidden text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1">
@@ -53,7 +53,7 @@
     </div>
 
     <div class="relative">
-      <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-10 h-10 rounded-full cursor-pointer" src="{{ asset('images/anonim.svg') }}" alt="User dropdown">
+      <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="md:w-10 md:h-10 xs:w-8 xs:f-8 rounded-full cursor-pointer" src="{{ asset('images/anonim.svg') }}" alt="User dropdown">
 
       <!-- Dropdown menu -->
       <div id="userDropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute right-0 mt-2">

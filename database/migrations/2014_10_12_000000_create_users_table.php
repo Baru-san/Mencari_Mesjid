@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('No_Hp')->nullable();
             $table->binary('profile_image')->nullable();
             $table->string('password');
-            $table->string('role');
+            $table->string('role')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

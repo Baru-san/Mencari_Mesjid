@@ -8,7 +8,7 @@
  use Illuminate\Support\Facades\Hash;
  use RealRashid\SweetAlert\Facades\Alert;
   
- class registerController extends Controller
+ class RegisterController extends Controller
  {
      /**
       * Display a listing of the resource.

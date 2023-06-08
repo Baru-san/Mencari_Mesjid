@@ -2,11 +2,11 @@
 
 
     <!-- Tailwind -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"> --}}
  
 
     <!-- AlpineJS -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
     <!-- Font Awesome -->
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script> --}}
 
@@ -31,12 +31,12 @@
         <!-- Posts Section -->
         <section class="w-full md:w-2/3 flex flex-col items-center px-3 mx-auto">
 
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow my-4 searchable-article" id="1">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75 w-full">
                     <img src="{{ asset('images/Rectangle_1.png') }}" class="w-full max-h-96 object-cover" style="border-radius: 25px 25px 0 0;">
                 </a>
-                <a href="/sejarah">
+                <a href="/profilMasjid">
                 <div class="bg-white flex flex-col justify-start p-3" style="border-radius: 0 0 25px 25px">
                     {{-- <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a> --}}
                     <p  class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</p>
@@ -49,7 +49,7 @@
                 </a>
             </article>
 
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow my-4 searchable-article" id="2">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75">
                     <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=2">
@@ -65,7 +65,7 @@
                 </div>
             </article>
 
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow my-4 searchable-article" id="3">
                 <!-- Article Image -->
                 <a href="#" class="hover:opacity-75">
                     <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=3">

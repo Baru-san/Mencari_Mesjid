@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> {{ $title }} | Cari mesjid  </title>
-  @yield('head')
-  @vite('resources/css/app.css')
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-</head>
-<body @yield('body')>
-  @include('sweetalert::alert')
+        <title>{{ $title }} | Cari Masjid</title>
 
- 
-  @include('landing.component.navbar')
- 
- 
-  <main class="min-h-screen">
-    @yield('content')
-  </main>
- 
- 
-  @vite('resources/js/app.js')
- 
-  
-</body>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-@yield('scripts')
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
+    <body class="font-sans antialiased">
+        <div class="min-h-screen bg-cyan-950">
+            @include('landing.component.navbar')
+            {{-- @include('layouts.navigation') --}}
+            <!-- Page Heading -->
+
+            @yield('content')
+            <!-- Page Content -->
+            <main>
+                {{-- {{ $slot }} --}}
+            </main>
+        </div>
+    </body>
 </html>
- 

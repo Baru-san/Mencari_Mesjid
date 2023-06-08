@@ -1,57 +1,57 @@
-@extends('layouts.app')
+<x-guest-layout>
+    <!-- Session Status -->
+    <x-auth-session-status class="mb-4" :status="session('status')" />
 
-@section('body')
-    class="bg-cyan-950"
-    
-@endsection
+    <form method="POST" action="{{ route('login') }}">
+        @csrf
+            <div class="container rounded-lg max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+                <div class="bg-white px-6 py-8 rounded-lg shadow-md text-black w-full">
+                    <h1 class="mb-8 text-3xl text-center">Log in</h1>
+        <!-- Email Address -->
+        <div>
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
 
-@section('content')
+        <!-- Password -->
+        <div class="mt-4">
+            <x-input-label for="password" :value="__('Password')" />
 
-<form action="/login" method="post">
-    @csrf
-<div class="bg-grey-lighter min-h-screen flex flex-col">
-    <div class="container rounded-lg max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-        <div class="bg-white px-6 py-8 rounded-lg shadow-md text-black w-full">
-            <h1 class="mb-8 text-3xl text-center">Log in</h1>
+            <x-text-input id="password" class="block mt-1 w-full"
+                            type="password"
+                            name="password"
+                            required autocomplete="current-password" />
 
-            @if (session('Information'))
-            <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                <span class="font-medium">Success alert!</span> {{ session('Information') }}
-              </div>                
-            
-        @endif
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
 
-            <input
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="email"
-                placeholder="Email" />
+        <!-- Remember Me -->
+        <div class="block mt-4">
+            <label for="remember_me" class="inline-flex items-center">
+                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
+                <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+            </label>
+        </div>
 
-            <input
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="password"
-                placeholder="Password" />
-
-            <div class="content-center rounded-md fill-black max-w-sm flex flex-col justify-center px-3">
-
-            </div>
-
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg w-full text-center">
-                Login
-            </button>
-
-            <div class="text-grey-dark mt-6" >
-                Tidak mempunyai akun ?
-                <a class="no-underline border-b border-blue text-blue-600 hover:text-blue-800 font-semibold hover:font-bold" href="/signin">
-                    Sign Up
+        <div class="flex items-center justify-end mt-4">
+            @if (Route::has('password.request'))
+                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                    {{ __('Forgot your password?') }}
                 </a>
-            </div>
+            @endif
+
+            <x-primary-button class="ml-3">
+                {{ __('Log in') }}
+            </x-primary-button>
+        </div>
+        <div class="text-grey-dark mt-6" >
+            Tidak mempunyai akun ?
+            <a class="no-underline border-b border-blue text-blue-600 hover:text-blue-800 font-semibold hover:font-bold" href="/register">
+                Sign Up
+            </a>
         </div>
     </div>
 </div>
 <!-- End Hero Section -->
-</form>
- 
- 
-@endsection
+</form></x-guest-layout>

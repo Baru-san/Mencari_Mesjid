@@ -10,12 +10,12 @@
     <h1 class="text-2xl font-bold mb-4 text-white">Selamat Datang</h1>
 </div>
 <div class="flex items-center justify-center h-screen">
-    <div class="flex flex-col place-items-start justify-start border border-gray-200 rounded-lg shadow md:flex-row md:w-[65%] md:h-[600px] dark:border-gray-700 dark:bg-gray-800"
+    <div class="flex flex-col place-items-start justify-start border border-gray-200 rounded-lg shadow md:flex-row md:w-[65%] md:h-[600px]"
         style="background-image: url('images/Rectangle_57.jpg'); background-repeat: no-repeat; background-size: cover;">
         <div class="p-4 mb-2 items-start"
             style="margin-left: 30px; margin-top: 20px;">
             <div class="mb-2">
-                <label for="basic-url" class="block text-neutral-700 dark:text-neutral-200">Nama Masjid</label>
+                <label for="basic-url" class="block text-neutral-700">Nama Masjid</label>
             </div>
             <div class="relative mb-4">
                 <input type="text" size="88" autofocus placeholder="Nama Masjid"
@@ -23,7 +23,7 @@
                     id="basic-url" aria-describedby="basic-addon3" />
             </div>
             <div class="mb-2">
-                <label for="basic-url" class="block text-neutral-700 dark:text-neutral-200">Sejarah</label>
+                <label for="basic-url" class="block text-neutral-700">Sejarah</label>
             </div>
             <div class="relative mb-4">
                 <textarea name="sejarah" rows=4 cols=20 type="text" size="88" autofocus placeholder="Sejarah"

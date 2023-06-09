@@ -5,7 +5,7 @@
       <span class="self-center md:text-2xl xs:text-base font-semibold whitespace-nowrap text-white ">Cari Mesjid</span>
     </a>
 
-    <div class=" w-full xs:w-auto ml-auto pr-20" id="navbar-items">
+    <div class=" w-full xs:w-auto ml-auto md:pr-20 xs:pr-5" id="navbar-items">
       <ul class="font-medium flex flex-col p-4 xs:p-0 mt-4 border border-gray-100 rounded-lg  xs:flex-row xs:space-x-8 xs:mt-0 xs:border-0 md:dark:bg-gray-900">
 
         @auth
@@ -16,39 +16,15 @@
         <li>
           <a href="/listMasjid" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 xs:hover:bg-transparent xs:border-0 xs:hover:text-blue-700 xs:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent mt-2">Masjid</a>
         </li>
-        {{-- <li>
-          <a href="#" id="search-link" class="md:hidden text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1">
+        <li>
+          <a href="/listMasjid" class="block py-2  text-white rounded hover:bg-gray-100 xs:hover:bg-transparent xs:border-0 xs:hover:text-blue-700 xs:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent mt-2">
             <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
             </svg>
-            <span class="sr-only">Search</span>
           </a>
+                  
           
-          <div class="relative hidden md:block">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-              </svg>
-              <span class="sr-only">Search icon</span>
-            </div>
-            <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." onkeydown="search(event)">
-          </div>
-          
-          <script>
-            function search(event) {
-              if (event.keyCode === 13) { // Check if the Enter key is pressed
-                event.preventDefault(); // Prevent the form submission
-                var searchInput = document.getElementById('search-navbar');
-                var searchTerm = searchInput.value;
-                var searchLink = document.getElementById('search-link');
-                searchLink.href = '/search?q=' + searchTerm; // Set the href of the search link
-                window.location.href = searchLink.href; // Redirect to the search link
-              }
-            }
-          </script>
-          
-          
-        </li> --}}
+        </li>
       </ul>
     </div>
 

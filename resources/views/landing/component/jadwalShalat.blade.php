@@ -14,7 +14,7 @@
       </h2>
     </div>
     
-<div class="relative overflow-x-auto xl:w-[650px] sm:w-full mx-auto shadow-md sm:rounded-lg">
+<div class="relative overflow-x-auto xl:w-[650px] sm:w-full mx-auto shadow-md xs:rounded-lg">
     <table class="w-full text-sm text-left text-gray-500 h-[500px]">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
@@ -36,10 +36,20 @@
                     Shubuh
                 </th>
                 <td class="px-6 py-4">
+                    @if ($azan == null)
+                        
+                    @else
                     {{ $azan['subuh'] }}
+
+                    @endif
                 </td>
                 <td class="px-6 py-4">
+                    @if ($jadwal == null)
+                        
+                    @else
                     {{ $jadwal['subuh'] }}
+
+                    @endif
                 </td>
 
             </tr>
@@ -48,11 +58,20 @@
                     Dzuhur
                 </th>
                 <td class="px-6 py-4">
+                    @if ($azan == null)
+                        
+                    @else
                     {{ $azan['dzuhur'] }}
 
+                    @endif
                 </td>
                 <td class="px-6 py-4">
+                    @if ($jadwal == null)
+                        
+                    @else
                     {{ $jadwal['dzuhur'] }}
+
+                    @endif
                 </td>
 
             </tr>
@@ -61,12 +80,20 @@
                     Ashar
                 </th>
                 <td class="px-6 py-4">
+                    @if ($azan == null)
+                        
+                    @else
                     {{ $azan['ashar'] }}
 
+                    @endif
                 </td>
                 <td class="px-6 py-4">
+                    @if ($jadwal == null)
+                        
+                    @else
                     {{ $jadwal['ashar'] }}
 
+                    @endif
                 </td>
 
 
@@ -76,12 +103,20 @@
                     Maghrib
                 </th>
                 <td class="px-6 py-4">
+                    @if ($azan == null)
+                        
+                    @else
                     {{ $azan['maghrib'] }}
 
+                    @endif
                 </td>
                 <td class="px-6 py-4">
+                    @if ($jadwal == null)
+                        
+                    @else
                     {{ $jadwal['maghrib'] }}
 
+                    @endif
                 </td>
 
 
@@ -91,12 +126,20 @@
                     Isya
                 </th>
                 <td class="px-6 py-4">
+                    @if ($azan == null)
+                        
+                    @else
                     {{ $azan['isya'] }}
 
+                    @endif
                 </td>
                 <td class="px-6 py-4">
+                    @if ($jadwal == null)
+                        
+                    @else
                     {{ $jadwal['isya'] }}
 
+                    @endif
                 </td>
 
 

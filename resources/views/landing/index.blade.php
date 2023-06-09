@@ -11,7 +11,7 @@
     @include('landing.component.card')
 </div>
 
-<div class="mt-20 gap-5" style="display: flex; justify-content: center; align-items: center; height: 700px;">
+<div class="mt-20 xs:mt-5 gap-5" style="display: flex; justify-content: center; align-items: center; height: 700px;">
 
 @include('landing.component.jadwalShalat')
 </div>

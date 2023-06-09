@@ -4,14 +4,14 @@
         <div class="bg-white px-6 py-8 rounded-lg shadow-md text-black w-full">
             <h1 class="mb-8 text-3xl text-center">Sign In</h1>
         <!-- Name -->
-
+{{-- 
         <select name="role" id="role"
         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-light dark:border-gray-600 text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
         required="">
         <option value="" hidden>Daftar Sebagai</option>
         <option value="0">Jemaah</option>
         <option value="1">Pengurus</option>
-    </select>
+    </select> --}}
 
         <div>
             <x-input-label for="name" :value="__('Name')" />

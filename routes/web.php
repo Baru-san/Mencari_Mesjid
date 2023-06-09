@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [DashboardController::class, 'landing'])->middleware('guest');
 // Route::get('/listMasjid', [DashboardController::class, ''
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -29,10 +29,17 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/listMasjid', [MasjidController::class, 'listMasjid']);
-Route::get('/profilMasjid', [MasjidController::class, 'profil']);
+// Route::get('/profilMasjid/sejarah', [MasjidController::class, 'sejarah']);
+Route::get('/profilMasjid/kajian/{id}', [MasjidController::class, 'kajian']);
+Route::get('/profilMasjid/kegiatan/{id}', [MasjidController::class, 'kegiatan']);
+Route::get('/profilMasjid/shalat/{id}', [MasjidController::class, 'shalat']);
+Route::get('/profilMasjid/ziswaf/{id}', [MasjidController::class, 'ziswaf']);
+Route::get('/profilMasjid/sejarah/{id}', [MasjidController::class, 'sejarah']);
 
-Route::get('/search', function(){
-    return view('blog.search',[
+
+Route::get('/profileMasjid
+', function(){
+    return view('profileMasjid.index',[
         'title' => 'Search'
     ]);
 });

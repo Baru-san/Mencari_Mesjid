@@ -26,6 +26,8 @@
                             <li>Lomba</li>
                             <li>Maulid</li>
                             <li>Zikir Bersama</li>
+                            <li>Zikir Akbar</li>
+
                         </ul>
                     </div>
                     <div class="mb-2">

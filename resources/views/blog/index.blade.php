@@ -13,8 +13,7 @@
     <!-- AlpineJS -->
     {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
    
-</head>
-<body class="bg-white font-family-karla">
+
 
     <div class="container mx-auto flex flex-wrap py-6">
 
@@ -198,7 +197,5 @@
         }
     </script> --}}
 
-</body>
-</html> 
  
 @endsection

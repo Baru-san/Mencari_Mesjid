@@ -72,7 +72,7 @@
         </div>
         <ul class="py-2 text-sm text-gray-700" aria-labelledby="avatarButton">
           <li>
-            <a href="login" class="block px-4 py-2 hover:bg-gray-100">Login</a>
+            <a href="/login" class="block px-4 py-2 hover:bg-gray-100">Login</a>
           </li>
         </ul>
         @endauth

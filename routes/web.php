@@ -37,10 +37,13 @@ Route::get('/profilMasjid/ziswaf/{id}', [MasjidController::class, 'ziswaf']);
 Route::get('/profilMasjid/sejarah/{id}', [MasjidController::class, 'sejarah']);
 
 
-Route::get('/profileMasjid
-', function(){
+Route::get('/profileMasjid', function(){
     return view('profileMasjid.index',[
-        'title' => 'Search'
+        'title' => 'Search',
+    ]);
+});
+
+
 Route::get('/search', function(){
     return view('blog.search',[
         'title' => 'Search',
@@ -79,7 +82,7 @@ Route::get('/kegiatanForm', function() {
     ]);
 });
 
-Route::get('/profile', function() {
+Route::get('/profil', function() {
     return view('userProfile.profile', [
         'title'=>'profile',
     ]);

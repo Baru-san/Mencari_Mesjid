@@ -14,7 +14,10 @@ return new class extends Migration
         Schema::create('kegiatan_masjids', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('masjid_id');
+            $table->string('nama_kegiatan');
+            $table->string('jenis_kegiatan');
             $table->date('tanggal_kegiatan');
+            $table->time('Waktu');
             $table->binary('Poster_image')->nullable();
             $table->timestamps();
 

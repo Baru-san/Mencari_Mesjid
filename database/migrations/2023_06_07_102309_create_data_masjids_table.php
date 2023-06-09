@@ -14,9 +14,15 @@ return new class extends Migration
         Schema::create('data_masjids', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('provinsi')->nullable();
+            $table->string('kabupaten')->nullable();
             $table->string('alamat')->nullable();
             $table->binary('Mosque_image')->nullable();
-            $table->string('PenanggungJawab');
+            $table->string('Mosque_image_url')->nullable();
+            $table->string('PenanggungJawab1')->nullable();
+            $table->string('PenanggungJawab2')->nullable();
+            $table->string('PenanggungJawab3')->nullable();
+            $table->string('negara')->nullable();
             $table->longText('History')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->rememberToken();

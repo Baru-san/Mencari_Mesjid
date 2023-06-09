@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('shalat_khususes', function (Blueprint $table) {
             $table->id();
-            $table->enum('jenis_shalat', ['jumat', 'Idul_fitri', 'idul_adha', 'tarawih'])->default('jumat');
+            $table->string('jenis_shalat');
             $table->string('imam');
             $table->string('muazzin');
+            $table->string('khatib')->nullable();
             $table->unsignedBigInteger('masjid_id');
+            $table->date('tanggal');
             $table->timestamps();
 
             $table->foreign('masjid_id')->references('id')->on('data_masjids')->onDelete('cascade');

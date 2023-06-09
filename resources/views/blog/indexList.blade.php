@@ -6,8 +6,9 @@
 @endsection
 
 @section('content')
+<div class="container mx-auto flex flex-wrap py-6">
 
  @include('blog.list.list')
- 
+</div> 
  
 @endsection

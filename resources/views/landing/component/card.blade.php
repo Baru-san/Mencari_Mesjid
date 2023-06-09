@@ -1,8 +1,9 @@
 <div href="#" class="flex flex-col items-center justify-start bg-[image-url] border border-gray-200 rounded-lg shadow xs:flex-row xs:w-[65%] md:h-[600px] xs:h-[300px]"
    style="background-image: url('images/Rectangle_57.jpg'); background-repeat: no-repeat; background-size: cover; "> 
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 md:text-2xl sm:text-base  font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-        <p class="mb-3 font-normal xs:text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <h2 class="font-sans mb-3 md:text-3xl xs:text-lg font-bold tracking-tight text-cyan-950">Selamat Datang</h2>
+        <h2 class="font-sans mb-2 md:text-5xl xs:text-xl font-extrabold tracking-tight text-indigo-500">Cari Masjid</h2>
+        <p class="mb-3 md:text-base xs:text-xs text-gray-700">Website Cari Masjid adalah sebuah website yang menghubungkan antara pengurus mesjid dengan jamaah masjid sehingga dapat saling berbagi informasi dan saling membantu memfasilitasi. Aplikasi ini dirancang memiliki dua model keanggotaan: Pengurus Mesjid dan Jamaah. Pengurus mesjid dan jamaah bisa saling mengikuti. Pengikut mesjid disebut dengan jamaah sementara pengikut jamaah disebut dengan Sahabat.</p>
     </div>
     <img 
     @auth

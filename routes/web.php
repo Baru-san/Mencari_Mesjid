@@ -41,6 +41,15 @@ Route::get('/profileMasjid
 ', function(){
     return view('profileMasjid.index',[
         'title' => 'Search'
+Route::get('/search', function(){
+    return view('blog.search',[
+        'title' => 'Search',
+    ]);
+});
+
+Route::get('/profileMasjid', function() {
+    return view('profileMasjid.index', [
+        'title'=>'profileMasjid',
     ]);
 });
 
@@ -67,5 +76,11 @@ Route::get('/salatForm', function() {
 Route::get('/kegiatanForm', function() {
     return view('form.kegiatanForm', [
         'title'=>'kegiatanForm',
+    ]);
+});
+
+Route::get('/profile', function() {
+    return view('userProfile.profile', [
+        'title'=>'profile',
     ]);
 });

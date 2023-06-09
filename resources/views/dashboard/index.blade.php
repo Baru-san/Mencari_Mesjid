@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> {{ $title }} | Cari mesjid  </title>
   @vite('resources/css/app.css')
+  <link rel="icon" type="image/svg+xml" href="images/logo_2.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <Link href="{{ asset('/css/style.css') }} " rel="stylesheet">
 </head>

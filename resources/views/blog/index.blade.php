@@ -7,12 +7,6 @@
 
 @section('content')
 
-    <!-- Tailwind -->
-    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"> --}}
-
-    <!-- AlpineJS -->
-    {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
-   
 
 
     <div class="container mx-auto flex flex-wrap py-6">

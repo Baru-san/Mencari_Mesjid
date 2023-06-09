@@ -1,5 +1,5 @@
-<>
-<h2 class="font-extrabold p-2  text-[24px] leading-[30.24px] text-white text-center border-2 rounded-xl">
+
+<h2 class="font-extrabold p-2 md:mt-20 xs:mt-5  text-[24px] leading-[30.24px] text-white text-center border-2 rounded-xl">
   Berita Terkini
 </h2>
 
@@ -8,7 +8,7 @@
 
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
             <a href="#">
-                <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                <img class="rounded-t-lg" src="" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
